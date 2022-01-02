@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
       //* ambil user model dengan nama user sama dengan firebaseatuhenfigikasi curent user
       //* jadi user yang udah login langsung ke main page ga usah login atau register lagi
       //! kalau muncul error Error: 'User' isn't a type. User? user = FirebaseAuth.instance.currentUser;
-      //! periksa di page.dart kalau ada dart.ui itu harus di hapus kalau ga di pake
+      //! berarti ndk page.dart kalau ada dart.ui itu harus di hapus kalau ga di pake
 
       User? user = FirebaseAuth.instance.currentUser;
       if (user == null) {

@@ -5,27 +5,6 @@ class BonusSaldoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //*sebelum menggunakan bloc
-
-    // Widget name() {
-    //   return Column(
-    //     crossAxisAlignment: CrossAxisAlignment.start,
-    //     children: [
-    //       Text(
-    //         'Name',
-    //         style: whiteFontStyle.copyWith(
-    //           fontWeight: FontWeight.w300,
-    //         ),
-    //       ),
-    //       Text(
-    //         'Kezia Anne',
-    //         style: whiteFontStyle.copyWith(fontSize: 20),
-    //         overflow: TextOverflow.ellipsis,
-    //       ),
-    //     ],
-    //   );
-    // }
-
     Widget name() {
       return BlocBuilder<AuthCubit, AuthState>(
         builder: (context, state) {
@@ -110,7 +89,7 @@ class BonusSaldoPage extends StatelessWidget {
       return Container(
         margin: const EdgeInsets.only(bottom: 50),
         child: Text(
-          'We give you early credit so that\nyou can buy a flight ticket',
+          'Kami memberimu kredit awal\nsupaya kamu bisa terbang!',
           style: greyFontStyle.copyWith(fontSize: 16),
           textAlign: TextAlign.center,
         ),
@@ -129,7 +108,7 @@ class BonusSaldoPage extends StatelessWidget {
             borderRadius: BorderRadius.circular(17),
           ),
         ),
-        child: Text('Star Fly Now'),
+        child: Text('Mlakuy Sekarang!'),
       );
     }
 

@@ -37,24 +37,6 @@ class SignInPage extends StatelessWidget {
         );
       }
 
-//*sebelum menggunakan bloc
-
-//  Widget button() {
-//         return CustomButton(
-//           margin: EdgeInsets.only(top: 20),
-//           title: 'Get Started',
-//           onPressed: () {
-//             Get.to(MainPage());
-//           },
-//           width: 255,
-//         );
-//       }
-
-      //* di bungkus  custom buton dengan BlocConsumer of auth cubit dan auth state
-      //* di pilih auth cube dan auth state karena untuk authenfikasi
-      //* if jika state AuthSukses (AuthSuccess bagian dari auth state) maka lanjutkan
-      //* selain itu jika state itu auth filed(auth filed bagian dari auth state) maka
-      //* tampilkan pesan error
       Widget button() {
         return BlocConsumer<AuthCubit, AuthState>(
           listener: (context, state) {

@@ -102,7 +102,7 @@ class DetailsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Photos',
+                'Foto',
                 style: blackFontStyle1.copyWith(fontSize: 16),
               ),
               const SizedBox(height: 6),
@@ -122,21 +122,21 @@ class DetailsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Interests',
+                'Ketertarikan',
                 style: blackFontStyle1.copyWith(fontSize: 16),
               ),
               const SizedBox(height: 16),
               Row(
                 children: [
-                  InterestDetails(title: 'Swimming'),
-                  InterestDetails(title: 'Reading'),
+                  InterestDetails(title: 'Berenang'),
+                  InterestDetails(title: 'Membaca'),
                 ],
               ),
               SizedBox(height: 10),
               Row(
                 children: [
-                  InterestDetails(title: 'Swimming'),
-                  InterestDetails(title: 'Reading'),
+                  InterestDetails(title: 'Berenang'),
+                  InterestDetails(title: 'Membaca'),
                 ],
               ),
             ],
@@ -189,7 +189,7 @@ class DetailsPage extends StatelessWidget {
         Widget button() {
           return CustomButton(
             margin: EdgeInsets.only(right: defaultMargin),
-            title: 'Book Now',
+            title: 'Pesan sekarang',
             width: 170,
             onPressed: () {
               Get.to(ChooseSeatPage(destination));

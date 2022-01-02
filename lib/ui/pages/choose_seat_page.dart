@@ -25,7 +25,7 @@ class _ChooseSeatPageState extends State<ChooseSeatPage> {
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 30),
                     child: Text(
-                      'Select Your\nFavorite Seat',
+                      'Pilih\nBangku Favoritmu!',
                       style: blackFontStyle1.copyWith(fontSize: 24),
                     ),
                   ),
@@ -46,7 +46,7 @@ class _ChooseSeatPageState extends State<ChooseSeatPage> {
                               ),
                             ),
                           ),
-                          Text('Available', style: blackFontStyle2),
+                          Text('Tersedia', style: blackFontStyle2),
                         ],
                       ),
                       Row(
@@ -60,7 +60,7 @@ class _ChooseSeatPageState extends State<ChooseSeatPage> {
                               color: mainColor,
                             ),
                           ),
-                          Text('Selected', style: blackFontStyle2),
+                          Text('Terpilih', style: blackFontStyle2),
                         ],
                       ),
                       Row(
@@ -74,7 +74,7 @@ class _ChooseSeatPageState extends State<ChooseSeatPage> {
                               color: Color(0xffEBECF1),
                             ),
                           ),
-                          Text('Unavailable', style: blackFontStyle2),
+                          Text('Tidak Tersedia', style: blackFontStyle2),
                         ],
                       ),
                     ],
@@ -339,7 +339,7 @@ class _ChooseSeatPageState extends State<ChooseSeatPage> {
                     builder: (context, state) {
                       return CustomButton(
                         margin: EdgeInsets.only(bottom: 60),
-                        title: 'Continue to Checkout',
+                        title: 'Lanjutkan Checkout',
                         onPressed: () {
                           int price = widget.destination.price * state.length;
                           Get.to(

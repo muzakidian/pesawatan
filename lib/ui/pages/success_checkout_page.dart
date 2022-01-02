@@ -22,7 +22,7 @@ class SuccessCheckout extends StatelessWidget {
       return Container(
         margin: EdgeInsets.only(bottom: 10),
         child: Text(
-          'Well Booked 😍',
+          'Telah Terpesan! 😍',
           style: blackFontStyle1.copyWith(fontSize: 32),
         ),
       );
@@ -30,7 +30,7 @@ class SuccessCheckout extends StatelessWidget {
 
     Widget description() {
       return Text(
-        'Are you ready to explore the new\nworld of experiences?',
+        'Apakah kamu siap\nuntuk menjelajahi dunia?',
         style: greyFontStyle.copyWith(fontSize: 16, height: 2),
         textAlign: TextAlign.center,
       );
@@ -38,7 +38,7 @@ class SuccessCheckout extends StatelessWidget {
 
     Widget button() {
       return CustomButton(
-        title: 'My Bookings',
+        title: 'Pesananku',
         margin: EdgeInsets.only(top: 50),
         width: 220,
         onPressed: () {
