@@ -13,7 +13,7 @@ class BonusSaldoPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Name',
+                  'Nama',
                   style: whiteFontStyle.copyWith(
                     fontWeight: FontWeight.w300,
                   ),
@@ -44,7 +44,7 @@ class BonusSaldoPage extends StatelessWidget {
             ),
           ),
           Text(
-            'Pay',
+            'Bayar',
             style: whiteFontStyle.copyWith(
               fontSize: 16,
               fontWeight: FontWeight.w400,
@@ -61,7 +61,7 @@ class BonusSaldoPage extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 41),
             child: Text(
-              'Balance',
+              'Saldo',
               style: whiteFontStyle.copyWith(
                 fontWeight: FontWeight.w300,
               ),
