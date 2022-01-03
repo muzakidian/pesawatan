@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     margin: const EdgeInsets.only(left: defaultMargin),
                     child: Text(
-                      'Mau Mlakuy kemana?',
+                      'Mau Pergi Kemana?',
                       style: greyFontStyle.copyWith(fontSize: 16),
                     ),
                   ),
