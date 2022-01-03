@@ -101,7 +101,7 @@ class CheckoutPage extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(top: 20),
           child: Text(
-            'Booking Details',
+            'Detail Pemesanan',
             style: blackFontStyle1.copyWith(fontSize: 16),
           ),
         );
@@ -124,7 +124,7 @@ class CheckoutPage extends StatelessWidget {
               ),
               const Spacer(),
               Text(
-                '${transaction.amountOfTraveler} Person',
+                '${transaction.amountOfTraveler} Orang',
                 style: blackFontStyle1,
               ),
             ],
@@ -144,7 +144,7 @@ class CheckoutPage extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Seat',
+                'Kursi',
                 style: blackFontStyle2.copyWith(fontSize: 14),
               ),
               const Spacer(),
@@ -169,7 +169,7 @@ class CheckoutPage extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Isurance',
+                'Asuransi',
                 style: blackFontStyle2.copyWith(fontSize: 14),
               ),
               const Spacer(),
@@ -196,7 +196,7 @@ class CheckoutPage extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Refundable',
+                'Pengembalian',
                 style: blackFontStyle2.copyWith(fontSize: 14),
               ),
               const Spacer(),
@@ -223,7 +223,7 @@ class CheckoutPage extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'VAT',
+                'Pajak',
                 style: blackFontStyle2.copyWith(fontSize: 14),
               ),
               const Spacer(),
@@ -248,7 +248,7 @@ class CheckoutPage extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Price',
+                'Harga',
                 style: blackFontStyle2.copyWith(fontSize: 14),
               ),
               const Spacer(),
@@ -275,7 +275,7 @@ class CheckoutPage extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Grand Total',
+                'Total',
                 style: blackFontStyle2.copyWith(fontSize: 14),
               ),
               const Spacer(),
@@ -341,7 +341,7 @@ class CheckoutPage extends StatelessWidget {
                   //
                   //*payment detail
                   Text(
-                    'Payment Details',
+                    'Detail Pembayaran',
                     style: blackFontStyle1.copyWith(fontSize: 16),
                   ),
 
@@ -376,7 +376,7 @@ class CheckoutPage extends StatelessWidget {
                               style: blackFontStyle2.copyWith(fontSize: 18),
                               overflow: TextOverflow.ellipsis,
                             ),
-                            Text('Current Balance', style: greyFontStyle),
+                            Text('Saldo Saat Ini', style: greyFontStyle),
                           ],
                         ),
                       ),
@@ -417,7 +417,7 @@ class CheckoutPage extends StatelessWidget {
           return CustomButton(
             margin: const EdgeInsets.symmetric(
                 vertical: 44, horizontal: defaultMargin),
-            title: 'Pay Now',
+            title: 'Bayar Sekarang',
             onPressed: () {
               context.read<TransactionCubit>().createTransaction(transaction);
             },
@@ -433,7 +433,7 @@ class CheckoutPage extends StatelessWidget {
           child: TextButton(
             onPressed: () {},
             child: Text(
-              'Terms and Conditions',
+              'Syarat dan Ketentuan',
               style:
                   greyFontStyle.copyWith(decoration: TextDecoration.underline),
             ),
