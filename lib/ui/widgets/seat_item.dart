@@ -1,14 +1,12 @@
 part of 'widgets.dart';
 
 class SeatItem extends StatelessWidget {
-  // final int status;
   final String id;
   final bool isAvailable;
 
   const SeatItem({
     Key? key,
     this.isAvailable = true,
-    // required this.status,
     required this.id,
   }) : super(key: key);
 
@@ -28,19 +26,6 @@ class SeatItem extends StatelessWidget {
       }
     }
 
-    // backgroundColor() {
-    //   switch (status) {
-    //     case 0:
-    //       return availableColor;
-    //     case 1:
-    //       return mainColor;
-    //     case 2:
-    //       return unavailableColor;
-    //     default:
-    //       return unavailableColor;
-    //   }
-    // }
-
     borderColor() {
       if (!isAvailable) {
         return unavailableColor;
@@ -48,19 +33,6 @@ class SeatItem extends StatelessWidget {
         return mainColor;
       }
     }
-
-    // borderColor() {
-    //   switch (status) {
-    //     case 0:
-    //       return availableColor;
-    //     case 1:
-    //       return mainColor;
-    //     case 2:
-    //       return unavailableColor;
-    //     default:
-    //       return unavailableColor;
-    //   }
-    // }
 
     Widget child() {
       if (isSelected) {
@@ -74,24 +46,6 @@ class SeatItem extends StatelessWidget {
         return SizedBox();
       }
     }
-
-    // Widget child() {
-    //   switch (status) {
-    //     case 0:
-    //       return SizedBox();
-    //     case 1:
-    //       return Center(
-    //         child: Text(
-    //           'YOU',
-    //           style: blackFontStyle1.copyWith(color: Colors.white),
-    //         ),
-    //       );
-    //     case 2:
-    //       return SizedBox();
-    //     default:
-    //       return SizedBox();
-    //   }
-    // }
 
     return GestureDetector(
       onTap: () {
